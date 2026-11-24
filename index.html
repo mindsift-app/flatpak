@@ -1,0 +1,33 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>MindSift Flatpak repository</title>
+<style>
+body { font-family: system-ui, sans-serif; max-width: 46rem; margin: 2rem auto; padding: 0 1rem; line-height: 1.5; color: #222; }
+pre { background: #f2f2f2; padding: .75rem 1rem; overflow-x: auto; border-radius: 6px; }
+code { font-family: ui-monospace, monospace; }
+h1 img { width: 48px; height: 48px; vertical-align: middle; margin-right: .5rem; }
+</style>
+</head>
+<body>
+<h1><img src="icon.png" alt="">MindSift Flatpak repository</h1>
+<p>The MindSift desktop app for Linux (x86_64) as a Flatpak, with updates through GNOME Software, KDE
+Discover or <code>flatpak update</code>. Latest release: <strong>v0.99.4</strong>. The runtime
+(GNOME Platform) comes from Flathub.</p>
+<h2>Install</h2>
+<p>Open <a href="app.mindsift.MindSift.flatpakref">app.mindsift.MindSift.flatpakref</a> with your software center, or run:</p>
+<pre><code>flatpak install --user https://flatpak.mindsift.app/app.mindsift.MindSift.flatpakref</code></pre>
+<p>Or add the repository and install from it:</p>
+<pre><code>flatpak remote-add --user --if-not-exists mindsift https://flatpak.mindsift.app/mindsift.flatpakrepo
+flatpak install --user mindsift app.mindsift.MindSift</code></pre>
+<p>Run it with <code>flatpak run app.mindsift.MindSift</code> or from your app menu. Updates:
+<code>flatpak update</code>.</p>
+<h2>Signature</h2>
+<p>Commits and summary are signed with the key <a href="mindsift.gpg">mindsift.gpg</a>
+(fingerprint <code>AFF88FCC8EA95FE897DAC57555173D35F6892584</code>); both files above carry it, so Flatpak checks every download.</p>
+<p><a href="https://mindsift.app/">mindsift.app</a> &middot;
+<a href="https://github.com/mindsift-app/mindsift/releases">all releases</a></p>
+</body>
+</html>
